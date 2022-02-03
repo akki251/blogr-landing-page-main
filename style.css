@@ -494,6 +494,7 @@ footer {
     position: absolute;
     top: 60vh;
     left: 50%;
+    margin-top: 5vh;
     text-align: center;
     transform: translate(-50%, 50%);
     /* right: 0; */
@@ -606,9 +607,12 @@ footer {
 
 @media (max-width: 30em) {
   html {
-    font-size: 9px;
+    font-size: 8.5px;
   }
 
+  .nav-open .right-nav {
+    margin-top: 8vh;
+  }
   .right-nav {
     width: 0;
     height: 0;
