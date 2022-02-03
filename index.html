@@ -24,7 +24,7 @@
       -->
 
     <header class="hero">
-      <div class="nav-container container">
+      <div class="nav-container container" id="main-nav">
         <nav>
           <div class="left-nav">
             <img src="./images/logo.svg" alt="blogr logo" />
@@ -95,6 +95,20 @@
             <a href="#"><span class="login">Login</span></a>
             <button class="btn primary-btn">Sign Up</button>
           </div>
+
+          <button class="toggle-btn" id="toggle-btn">
+            <img
+              id="hamberger"
+              class="hamberger-icon"
+              src="./images/icon-hamburger.svg"
+              alt="hamberger-icon"
+            />
+            <img
+              class="close-icon"
+              src="./images/icon-close.svg"
+              alt="close-icon"
+            />
+          </button>
         </nav>
       </div>
 
@@ -184,8 +198,14 @@
         <div class="container grid grid-2-cols simple-container">
           <div class="simple-img-box">
             <img
+              class="desktop-img"
               src="./images/illustration-laptop-desktop.svg"
               alt="laptop illustration in red"
+            />
+            <img
+              class="mobile-img"
+              src="./images/illustration-laptop-mobile.svg"
+              alt="laptop illustration"
             />
           </div>
           <div class="simple-text-box">

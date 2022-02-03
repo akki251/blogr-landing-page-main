@@ -1,3 +1,9 @@
+//
+// ──────────────────────────────────────────────────────────── I ──────────
+//   :::::: M E N U   H O V E R : :  :   :    :     :        :          :
+// ──────────────────────────────────────────────────────────────────────
+//
+
 const mainNavLists = document.querySelectorAll(
   ".main-nav-list .main-nav-list-item"
 );
@@ -28,3 +34,18 @@ function clearAll() {
     }
   }
 }
+
+//
+// ────────────────────────────────────────────────────────────────────── II ──────────
+//   :::::: N A V   O P E N   T O G G L E : :  :   :    :     :        :          :
+// ────────────────────────────────────────────────────────────────────────────────
+//
+
+const toggleBtn = document.getElementById("toggle-btn");
+const mainNav = document.getElementById("main-nav");
+toggleBtn.addEventListener("click", () => {
+  mainNav.classList.toggle("nav-open");
+});
+
+
+
