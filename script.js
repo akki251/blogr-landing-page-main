@@ -47,5 +47,12 @@ toggleBtn.addEventListener("click", () => {
   mainNav.classList.toggle("nav-open");
 });
 
+function changeNavStatus(mediaWidth) {
+  if (mediaWidth.matches) {
+    mainNav.classList.remove("nav-open");
+  }
+}
 
-
+var mediaWidth = window.matchMedia("(min-width: 963px)");
+changeNavStatus(mediaWidth);
+mediaWidth.addListener(changeNavStatus);
